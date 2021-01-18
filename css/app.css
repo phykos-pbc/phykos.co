@@ -1,0 +1,104 @@
+
+/*
+ * Site specific styles for phykos website.
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+  background: url(/img/surface-opt.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.overlay {
+  background-color: rgba(20, 20, 20, 0.6);
+  border: 0.5rem rgb(32, 32, 36) solid;
+  border-radius: 5px;
+  color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 5rem;
+  margin-top: 20%;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+}
+
+h1 span {
+  color: #999;
+  font-size: 0.4em;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+p.mission {
+  color: #bbbbbf;
+  font-size: 1.5rem;
+  max-width: 35rem;
+  min-width: 10rem;
+}
+
+p.coming {
+  color: #999;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+p.contact {
+  margin-top: 3em;
+}
+
+a.contact,
+a.contact:visited {
+  background: #005871;
+  border: 1px solid #9EBACC;
+  border-radius: 3px;
+  color: #bbbbbf;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Responsive text and padding sizes
+   ========================================================================== */
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 13pt; }}
+
+@media screen and (max-width: 1280px) {
+  html { font-size: 11pt; } 
+  div.overlay { padding: 4rem; }
+  h1 { font-size: 4rem; }
+}
+
+@media screen and (max-width: 980px) {
+  html { font-size: 12pt; } 
+  div.overlay { padding: 3rem; }
+  h1 { font-size: 3rem; }
+}
+
+@media screen and (max-width: 736px) {
+  html { font-size: 10pt; } 
+  div.overlay { padding: 2rem; }
+  h1 { font-size: 2rem; }
+}
+
+@media screen and (max-width: 480px) {
+  html { font-size: 10pt; } 
+  div.overlay { padding: 2rem; }
+  h1 { font-size: 2rem; }
+}
