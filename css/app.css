@@ -80,13 +80,13 @@ a.contact:visited {
     font-size: 13pt; }}
 
 @media screen and (max-width: 1280px) {
-  html { font-size: 11pt; } 
+  html { font-size: 12pt; } 
   div.overlay { padding: 4rem; }
   h1 { font-size: 4rem; }
 }
 
 @media screen and (max-width: 980px) {
-  html { font-size: 12pt; } 
+  html { font-size: 11pt; } 
   div.overlay { padding: 3rem; }
   h1 { font-size: 3rem; }
 }
