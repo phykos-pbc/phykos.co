@@ -15,21 +15,26 @@ html {
   background-size: cover;
 }
 
+body {
+  color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
 div.overlay {
   background-color: rgba(20, 20, 20, 0.7);
-  color: #efefef;
-  font-family: 'Open Sans', sans-serif;
   padding: 5rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 10;
 }
 
 div.wrap {
   margin: 0 auto;
   text-align: center;
+  z-index: 1;
 }
 
 h1 {
@@ -48,12 +53,12 @@ h1 span {
 }
 
 p.mission {
-  color: #bbbbbf;
+  color: #dedede;
   font-size: 1.5rem;
 }
 
 p.coming {
-  color: #999;
+  color: #dedede;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
