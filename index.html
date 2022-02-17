@@ -20,44 +20,405 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/app.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/mvp.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <style>
+    :root {
+      --color-bg: #f6f6ef;
+      --color-bg-secondary: #e5eaea;
+      --color-secondary: #CCCC00;
+      --color-text-secondary: #002B4F;
+      /* --color-secondary-accent: #002b4f96; */
+      --font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      --font-family-secondary: "Merriweather", Times, serif;
+      --width-card-medium: 660px;
+    }
+
+    h2, h3, h4, h5 {
+      color: var(--color-text-secondary);
+    }
+    
+    div.header-stripe {
+      background: #002B4F;
+      color: #f6f6ef;
+    }
+
+    div.header-stripe header {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    header nav {
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+
+    nav a {
+      color: #CCCC00;
+    }
+
+    span.logo-type {
+      font-family: var(--font-family-secondary);
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    nav span.logo-type {
+      font-size: 1.5em;
+    }
+
+    div.hero {
+      background: #022F50 url(/img/seaweed-closeup.jpg) no-repeat center bottom; 
+      min-height: 350px;
+    }
+    
+    div.hero header {
+      min-height: 12em;
+      position: relative;
+    }
+
+    div.hero img {
+      background: #002B4F;
+      padding: 12px;
+      left: 0;
+      position: absolute;
+      top: -12px;
+      border-radius: 12px;
+    }
+
+    div.hero h1 {
+      margin: 0 auto;
+    }
+
+    p.grand {
+      font-family: var(--font-family-secondary);
+      font-size: 1.6em;
+      margin-bottom: 1.8em;
+    }
+
+    article.hero figure {
+      float: right;
+      padding-left: 2em;
+      margin-bottom: 2em;
+    }
+
+    article.hero hr {
+      clear: right;
+    }
+
+    article.hero p img {
+      background: #002B4F;
+      border-radius: 5px;
+      float: left;
+      margin: 4px 0.8em 4px 0;
+      padding: 8px;
+    }
+
+    article span.logo-type {
+      color: #002B4F;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    section aside {
+      background-color: var(--color-bg-secondary);
+      text-align: center;
+    }
+
+    aside.profile img {
+      border-radius: 50%;
+    }
+
+    hr {
+      margin: 2.4rem auto;
+    }
+
+    footer {
+      color: var(--color-text-secondary);
+      font-size: 0.8em;
+    }
+
+  </style>
 </head>
 
 <body>
-  
-  <div class="wrap">
-    <h1>
-      Phykos<span>pbc</span>
-    </h1>
-    <p class="mission">
-      Our mission is to sequester 1 gigatonne <br>
-      of carbon per year safely in the deep ocean <br>
-      for generations to come.
-    </p>
-    <p class="coming">
-      More details surfacing in 2022
-    </p>
-    <p class="contact">
-      <a class="contact" onclick="this.href='mailto:'+['com','.','phykos','@','info'].reverse().join('');" href="#">
-        Contact Us
-      </a>
-    </p>
+  <div class="header-stripe">
+    <header>
+      <nav>
+        <span class="logo-type">
+          Phykos
+        </span>
+        <ul>
+          <li>Home</li>
+          <li><a href="#tech">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#jobs">Careers</a></li>
+          <li>
+            <a class="contact" onclick="this.href='mailto:'+['co','.','phykos','@','info'].reverse().join('');" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </div>
+  
+  <main>
+    <!--  
+    -->
+    <article class="hero">
+      <figure>
+        <img src="img/red-on-beach.jpg" height="auto" width="600px">
+      </figure>
+      <p class="grand">
+        <img alt="Phykos logo" src="./img/circuit-logo-small.png" height="70px">
+        We sink seaweed to stabilize the climate
+      </p>
+      <p>
+        <span class="logo-type">Phykos</span> is an ocean carbon dioxide 
+        removal company.<br /> We amplify natural marine carbon cycles to 
+        remove excess atmospheric CO<sub>2</sub> at climate relative scale.
+      </p>   
+      <hr />
+    </article>
     
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <article id="press">
+      <h3>Recent News</h3>
+      <p>
+        2022.02.17: 
+        <a href="https://oceanvisions.org/launchpadannouncement/">
+          Phykos joins Ocean Visions' Launchpad Program to advance ocean CDR
+        </a>, 
+        Ocean Visions Blog
+      </p>
+      <p>
+        2021.09.27: 
+        <a href="https://www.fastcompany.com/90680321/these-carbon-capturing-robotic-seaweed-farms-are-like-planting-forests-in-the-ocean">
+          These carbon-capturing robotic seaweed farms are like planting forests in the ocean
+        </a>, 
+        FastCo
+      </p>
+      <hr />
+    </article>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <article id="tech">
+      <h2>How It Works</h2>
+      <p>
+        We cultivate seaweed and sink it deep in the ocean, mimicking a carbon 
+        sequestration process that occurs naturally  with coastal seaweed beds 
+        and safely sequestering excess carbon for <i>1,000 years or more</i>; 
+        reducing the danger of catastrophic climate change.
+      </p>
+      <section>
+        <aside>
+          <img src="img/seaweed-closeup-sm.png" width="300px">
+          <h3>Grow</h3>
+          <p>
+            Our robotic seaweed growth platforms maintain position or migrate with 
+            changing conditions to optimize growth. Seaweed photosynthesis converts dissolved 
+            CO<sub>2</sub> into organic carbon embodied in the seaweed.
+          </p>
+          <p>
+            Algorithms maximize growth on our platforms 
+            while avoiding sensitive ocean environments and other ocean users.
+            Our system works in harmony with seasonal shifts in the ocean 
+            offering a safe and scalable pathway for nature based carbon dioxide 
+            removal.
+          </p>
+        </aside>
+        <aside>
+          <img src="img/deep-water.jpg" width="300px">
+          <h3>Sink</h3>
+          <p>
+            The seaweed from our growth platforms is harvested and sinks into 
+            the deep ocean, carrying the absorbed carbon with it to the deep ocean.
+          </p>
+          <p>
+            We target our seaweed harvests to regions deeper than 
+            1500 meters of depth to ensure 1,000 years of durable 
+            carbon sequestration. High resolution ocean models guide 
+            our platforms to deposition regions which maximize carbon storage  
+            and while minimizing disturbance to the deep ocean 
+            environment. Platform sensors and satellite communications enable 
+            precise reporting of our progress.
+          </p>
+        </aside>
+        <aside>
+          <img src="img/horizon.png" width="300px">
+          <h3>Save</h3>
+          <p>
+            The carbon embodied in our sunken seaweed is effectively removed from
+            the atmosphere as the surface ocean and atmosphere return to 
+            equilibrium. We sustain this process by selling carbon offsets to 
+            help organizations, companies, and governments meet their climate 
+            protection commitments, but the real payoff is a healthy planet and 
+            a sustainable future for humanity.
+          </p>
+          <p>
+            As a bonus, our nature based carbon removal process has the added 
+            benefits of cleaning, cooling, and de-acidifying ocean waters while 
+            providing protective habitat for marine life!
+          </p>
+        </aside>
+      </section>
+      <h3>Want to know more?</h3>
+      <p>
+        If you would like to learn more about ocean carbon removal, head 
+        over to the <a href="https://oceancdr.net/">OceanCDR website</a>. For 
+        more information about carbon removal in general, the 
+        <a href="https://cdrprimer.org/">CDR Primer</a> is a great place to 
+        start. Both resources are community driven, non-profit, and vetted by 
+        scientists and policymakers active in the field. If you are interested 
+        in working or collaborating with Phykos, see <a href="#jobs">Careers</a> 
+        and <a href="#otherways">Other ways to contribute</a> below.
+      </p>
+      <h3>Interested in buying offsets?</h3>
+      <p>
+        Please note that our seaweed carbon offset product is not currently 
+        available for general sales. We anticipate opening our sales pipeline 
+        in 2023 through a network of trusted brokers. If you would like to 
+        learn more, please contact 
+        <a href="mailto:sales@phykos.com">sales@phykos.com</a>.
+      </p>
+    </article>
+    <hr />
+    
+    <article id="team">
+      <h2>Team</h2>
+      <section>
+        <aside class="profile">
+          <a href="https://www.linkedin.com/in/nico-julian-77586111/">
+            <img src="img/nico.png">
+          </a>
+          <h3>Nico Julian</h3>
+          <p>
+            Founder and CEO<br />
+            Mechanical Engineering
+          </p>
+        </aside>
+        <aside class="profile">
+          <a href="https://www.linkedin.com/in/jeff-zerger-8a49159/">
+            <img src="img/jeff.png">
+          </a>
+          <h3>Jeff Zerger</h3>
+          <p>
+            Founder and COO<br />
+            Software Engineering
+          </p>
+        </aside>
+      </section>
+      <p>
+        We met while working on moonshots and new projects at Google X. 
+        Generalists and builders, we are passionate about oceans and 
+        positive solutions to the peril of severe climate change.
+      </p>
+      <p>
+        Between us, we've worked on solar power, wireless lighting efficiency, 
+        marine satellite communications, stratospheric balloon networks, 
+        and satellite command and control systems. We've built houses and farms 
+        and families, and we've travelled widely to see firsthand just how 
+        precious this world is.
+      </p>
+    </article>
+    <hr />
+    
+    <article id="jobs">
+      <h2>Careers</h2>
+      <p>
+        Interested in joining our team? Great! We are hiring our foundational 
+        team now with a focus on engineering, 
+        science, and operations roles to support ongoing system development and 
+        field testing over the course of 2022.
+      </p>
+      <p>
+        You can view and apply to our open roles on Y Combinator's 
+        <a href="https://www.workatastartup.com/companies/phykos">Work at a Startup</a>
+        website, including:
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.workatastartup.com/jobs/48364">
+            Mechanical Engineer
+          </a>
+        </li>
+        <li>
+          <a href="https://www.workatastartup.com/jobs/48365">
+            Software Engineer
+          </a>
+        </li>
+        <li>Ocean Scientist (opening soon)</li>
+        <li>Operations Technician (opening soon)</li>
+      </ul>
+      <p>
+        <cite>
+          At Phykos, we are committed to building a diverse team in an inclusive 
+          environment that fosters collaboration and growth. All qualified 
+          applicants are encouraged to apply and non-traditional backgrounds are 
+          welcome.
+        </cite>
+      </p>
+      <h3 id="otherways">Other ways to contribute</h3>
+      <p>
+        Like any startup, we have numerous problems to solve that are not currently
+        on the critical path but which we would love to begin addressing. If you are 
+        inspired by our mission and approach to ocean carbon removal and would 
+        like to collaborate, please reach out to us at 
+        <a href="mailto:collaboration@phykos.com">collaboration@phykos.com</a>
+        with a brief note describing your interest. Some examples include:
+        <ul>
+          <li>Academic researchers in ocean and climate science</li>
+          <li>Ocean and climate policy makers</li>
+          <li>Companies in adjacent ocean and climate tech industries</li>
+          <li>Engineers looking for side projects to help the planet</li>
+          <li>
+            Undergraduate and graduate students looking for research 
+            opportunities or internships
+          </li>
+        </ul>
+      </p>
+      <hr />
+    </article>
+
+    <article>
+      <h2>Fair Share</h2>
+      <p>
+        Protecting the global environment from catastrophic climate change will 
+        require all of us to engage with the problem and actively deploy positive 
+        solutions. At Phykos, we are grateful to be one of many hands working 
+        together to safeguard our planet and build a better future for 
+        generations to come.
+      </p>
+      <p>
+        Phykos is a registered 
+        <a href="https://en.wikipedia.org/wiki/Benefit_corporation">
+          Public Benefit Corporation
+        </a> 
+        with a mission to 
+        develop and implement biological climate stabilization systems while 
+        enhancing the health and productivity of the world's oceans.
+      </p>
+    </article>
+    <hr />
+
+    <footer>
+      <p>&copy;2022 Phykos, PBC</p>
+      <p>
+        Images on this page courtesy the generous and creative contributors to 
+        <a href="https://unsplash.com/">Unsplash</a>.
+      </p>
+    </footer>
+  </main>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+   -->
 </body>
 
 </html>
